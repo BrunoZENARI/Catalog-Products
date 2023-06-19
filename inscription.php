@@ -104,7 +104,9 @@ include "./includes/header.php";
                           <img width="80" class="-mt-10" src="img/logo.png">
                       </div>
                         <h2 class="text-red-600"><?php if(isset($_SESSION["error"]["userName"])){ echo ($_SESSION["error"]["userName"]);}?>
+                        <div>
                       <input class="p-3 border-[1px] bg-gray-900 text-gray-400 border-slate-500 rounded-sm w-80 focus:outline-none focus:border-[#B317E1] focus:ring-2 focus:ring-[#B317E1]" type="text" name="username" id="username" placeholder="Username" required>
+                      </div> 
                       <input class="p-3 border-[1px] bg-gray-900 text-gray-400 border-slate-500 rounded-sm w-80 focus:outline-none focus:border-[#B317E1] focus:ring-2 focus:ring-[#B317E1]" type="text" name="email" id="email" placeholder="E-Mail" required>
                       <div class="flex flex-col space-y-1">
                           <input class="p-3 border-[1px] bg-gray-900 text-gray-400 border-slate-500 rounded-sm w-80 focus:outline-none focus:border-[#B317E1] focus:ring-2 focus:ring-[#B317E1]" type="password" name="pass" id="password" placeholder="••••••••" required>

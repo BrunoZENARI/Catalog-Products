@@ -5,6 +5,10 @@ require "./connect.php";
 // Connection de l'utilisateur
 session_start();
 unset($_SESSION["error"]);
+if((($_SESSION["user"]["roles"]) != 'user') && (($_SESSION["user"]["roles"]) != 'admin')){
+    header("Location: login.php");
+    exit(); 
+  }
 
 // Vérification sur le formulaire est envoyé
 
@@ -95,8 +99,9 @@ if (!empty($_POST)) {
 include "./includes/header.php";
 ?>
 
-<main>
-    <section class="dark:bg-gray-900 section-1-index">
+
+    <section class="dark:bg-gray-900 section-10-index">
+        
         <nav class="navbar">
             <div class="logoz">
                 <img src="img/logo.png" alt="Logo Z">
@@ -121,7 +126,7 @@ include "./includes/header.php";
                 <span class="bar"></span>
             </div>
         </nav>
-
+    
         <div class="flex flex-col items-center justify-center px-2 py-4 mx-auto  lg:py-0">
             <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                 <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -219,10 +224,8 @@ include "./includes/header.php";
             </div>
         </div>
     </section>
-</main>
 
-<!-- <script src="./js/tailwind.config.js"></script> -->
-<!-- <script type="text/javascript" src="./js/toast.js"></script> -->
+
 <?php
 include "./includes/footer.php";
 ?>
