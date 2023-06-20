@@ -15,6 +15,7 @@ body {
 
 /* Menu hamburger */
 
+
 .header {
     border-bottom: 1px solid #E2E8F0;
     position: sticky;
@@ -68,18 +69,12 @@ body {
 
 .section-1-index {
 	background-image: url("../img/hero-bg1.png");
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-position: center center;
     background-size: cover;
     height: 940px;
-}
-
-.section-10-index {
-	background-image: url("../img/hero-bg1.png");
-	background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 1400px;
+    position: relative;
 }
 
 .dark\:bgcolor {
@@ -93,8 +88,6 @@ body {
 	padding-top: 10rem;
 	padding-left: 12rem ;
     display: flex;
-    position: relative;
-    z-index: 9;
     width: 80rem;
     text-align: left;
 }
@@ -112,16 +105,10 @@ body {
 }
 
 .heroimg {
-    position: relative;
-    bottom: 34rem;
-    left: 29rem;
-    width: 50%;
-    margin: auto;
-}
-
-.heroimg img {
-	width: 926px;
-	height: 772px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 32%; 
 }
 
 .logoz {
@@ -138,6 +125,12 @@ body {
 
 .slider {
     width: 50rem;
+    height: auto;
+    margin: auto;
+}
+
+.slide {
+    width: 110rem;
     height: auto;
     margin: auto;
 }
@@ -159,9 +152,7 @@ form{
 }
 
 footer{
-    color: white;
-    width: 100%;
-    clear: both;   
+    color: white
 }
 
 /* Class TOATS */
@@ -206,6 +197,27 @@ footer{
     to {top: 0; opacity: 0;}
   }
   
-  
+  .p-10 {
+    padding: 2.5rem;
+    height: 540px;
+    width: 422px;
+}
+
+.scalecss {
+    height: 20vh;
+    width: 20vw;
+}
   
   /* Classes TOATS END*/
+
+.player {
+    width: 89.5%;
+    top: -6vh;
+    position: relative;
+    margin: auto;
+}
+
+.hmodal {
+    height: 55rem;
+    top: 9px;
+}

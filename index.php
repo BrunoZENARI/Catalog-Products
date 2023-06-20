@@ -36,7 +36,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 		</div>
 	</nav>
 	<div class="headtitle">
-		<h1 class="title">Step into our virtual universe and embark on the ultimate gaming experience !</h1>
+		<h1 class="font-['Dancing Script'] title">Step into our virtual universe and embark on the ultimate gaming experience !</h1>
 	</div>
 	<p class="text-white default">just a line written for you</p>
 	<div class="discover">
